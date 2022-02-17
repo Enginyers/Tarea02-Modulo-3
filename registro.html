@@ -35,21 +35,21 @@
 
                         <div class="contenedor-campos">
                             <div class="campo">
-                                <p>Nombre: <input class="input-text" id="txtNombre" type="text" name="nombre" size="40"></p>
+                                <p>Nombre: <input class="input-text" id="txtNombre" type="text" name="nombre" size="40" required></p>
                             </div>
 
                             <div class="campo">
-                                <p>Apellido: <input class="input-text" id="txtApellido" type="text" name="apellido" size="40"></p>
+                                <p>Apellido: <input class="input-text" id="txtApellido" type="text" name="apellido" size="40" required></p>
                             </div>
 
                             <div class="campo">
-                                <p>Teléfono: <input class="input-text" id="txtTelefono" type="number" name="telefono"  size="10"></p>
+                                <p>Teléfono: <input class="input-text" id="txtTelefono" type="number" name="telefono"  size="10" required></p>
                             </div>
 
 
                             <div class="campo">
 
-                              <p>Dirección: <input class="input-text" id="txtDireccion" type="text" name="direccion"  size="40"></p>
+                              <p>Dirección: <input class="input-text" id="txtDireccion" type="text" name="direccion"  size="40" required></p>
                             </div>
 
 
@@ -58,14 +58,15 @@
                                 <p>Observaciones: <textarea class="text-area" id="txtObs" type="text-area" name="observaciones"  size="500"> </textarea> </p>
                             </div>
 
+
                         </div>
 
                         <div class="enviar">
-                            <input class="boton" id="btnenviar" type="button" value="enviar" 
-                            onclick="registrar()"> 
+                            <input class="boton" id="btnenviar" type="submit" value="enviar" onclick="registrar()"> 
                            
                             
                         </div>
+
 
                     </fieldset>
 
