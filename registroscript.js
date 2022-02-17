@@ -1,18 +1,6 @@
-const botonenviar = !!document.getElementById('btnenviar');
-
-
-if (botonenviar==true) {
-    document.getElementById("btnenviar").addEventListener("click", registrar); 
-
-    
-    
-
 function registrar(){
-
-    
-
-    
-    var form = document.getElementById("formulario").elements;
+ 
+   var form = document.getElementById("formulario").elements;
  
 for(var i = 0; i<= form.length - 1; i++)
 {
@@ -26,13 +14,12 @@ for(var i = 0; i<= form.length - 1; i++)
   
 } 
 
-if (localStorage.length > 0) 
+ if (localStorage.length > 0) 
     {
-        window.alert("Revisar en consola.");
+        window.alert("Registro exitoso");
        
-    }
+    } 
 
 }
 
-sessionStorage.clear;
-}
+console.log(localStorage);
